@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬램덩크</title>
+    <style>
+        div { width: fit-content; border: solid 3px wheat; border-radius: 20px; margin: auto; padding-left: 20px; padding-right: 20px;}
+        div:hover {background: rgb(240, 134, 118); cursor: pointer;}
+        img {border-radius: 20px; transition: 1.5s;}
+        img:hover {opacity: 0.5; border-radius: 100px;}
+        form {border: 5px solid blue; text-align: center;}
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <h1 onclick="zzz()">슬램덩크-더 퍼스트</h1>
+        </header>
+        <main>
+            <img src="images/헤더2.jpg" alt="헤더이미지">
+            <ol type="A">
+                <li>개요</li>
+                <li>줄거리</li>
+                <li>프로필</li>
+                <li>스포주의</li>
+            </ol>
+            <form>
+                <button type="button" onclick= "on()">왼손은</button>
+                <img src="images/슬.gif" alt="전구" id="bulb">
+                <button type="button" onclick="off()">거들뿐</button>
+            </form>
+        </main>
+    </div>
+    <script>
+        function zzz() {
+            alert( '슬램덩크 극장판의 제목이다.' );
+        }
+        function on() {
+            document.getElementById('bulb').src="images/슬2.gif";
+        }
+        function off() {
+            document.getElementById('bulb').src="images/슬.gif";
+        }
+    </script>
+</body>
+</html>
